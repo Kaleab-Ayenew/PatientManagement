@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1764959992 source:c:\users\cj\desktop\patientmgt\patientmangementv0.1\main.cpp
+	<iostream>
+	<cstdlib>
+	"Patient.h"
+	"validation.h"
+
+1764961377 c:\users\cj\desktop\patientmgt\patientmangementv0.1\include\patient.h
+
+1764959990 source:c:\users\cj\desktop\patientmgt\patientmangementv0.1\src\patient.cpp
+	<iostream>
+	<string>
+	<algorithm>
+	"Patient.h"
+	"validation.h"
+
+1764958945 c:\users\cj\desktop\patientmgt\patientmangementv0.1\validation.h
+	<string>
+
+1764958945 source:c:\users\cj\desktop\patientmgt\patientmangementv0.1\validation.h
+	<string>
+
+1764959037 source:c:\users\cj\desktop\patientmgt\patientmangementv0.1\validation.cpp
+	"validation.h"
+	<algorithm>
+	"string"
+
+1764961389 c:\users\cj\desktop\patientmgt\patientmangementv0.1\include\validation.h
+	<string>
+
+1764960145 source:c:\users\cj\desktop\patientmgt\patientmangementv0.1\src\validation.cpp
+	<algorithm>
+	<string>
+	"validation.h"
+
