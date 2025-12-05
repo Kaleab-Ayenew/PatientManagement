@@ -9,7 +9,11 @@ using namespace std;
 
 
 void master_menu();
-void patient_portal();
+
+void doctor_portal();
+void doctor_menu();
+
+
 void patient_menu();
 
 int main()
@@ -105,6 +109,12 @@ void patient_menu(){
         }
 
     }while(pChoice!=4);
+
+
+}
+
+void doctor_portal(){
+
 
 
 }

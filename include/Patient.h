@@ -1,13 +1,9 @@
 #ifndef PATIENT_H
 #define PATIENT_H
 
-
-
-
-
-
-
 using namespace std;
+
+
 
 class Patient
 {
@@ -21,7 +17,9 @@ class Patient
     private:
 
          string fName ,lName, password,email,conf_password,phone;
-         int year,month,day;
+         int year , month , day;
+
+
 
 };
 

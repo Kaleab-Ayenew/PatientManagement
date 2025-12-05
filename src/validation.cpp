@@ -19,7 +19,7 @@ bool isValidemail(string& email){
 }
 
 bool isValidphone(string& phone_num){
-    if(phone_num.length()>7 || phone_num.length()>15)
+    if(phone_num.length()<7 || phone_num.length()>15)
         return false;
     for(char c: phone_num){
         if(!isdigit(c))
@@ -27,6 +27,36 @@ bool isValidphone(string& phone_num){
     }
 
     return true;
+
+}
+
+bool isValiddob(int& years ,int& months ,int& days){
+
+    if (months < 1 || months > 12)
+        return false;
+
+
+    if (days < 1 || days > 31)
+        return false;
+
+
+    if ((months == 4 || months == 6 || months == 9 || months == 11) && days > 30)
+        return false;
+
+    if (months == 2) {
+        if ((years % 4 == 0 && years % 100 != 0) || (years % 400 == 0)) {
+          if (days > 29)
+            return false;
+        } else {
+          if (days > 28)
+            return false;
+        }
+      }
+
+
+      return true;
+
+
 
 }
 

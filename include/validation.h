@@ -8,5 +8,7 @@ bool isValidemail(string& email);
 
 bool isValidphone(string& phone_num);
 
+bool isValiddob(int& years ,int& months ,int& days);
+
 
 #endif // VALIDATION_H_INCLUDED
