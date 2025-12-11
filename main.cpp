@@ -1,7 +1,8 @@
 #include <iostream>
-
+#include <fstream>
 #include <cstdlib> // for exit
 #include "Patient.h"
+#include "Doctor.h"
 #include "validation.h"
 
 
@@ -10,7 +11,6 @@ using namespace std;
 
 void master_menu();
 
-void doctor_portal();
 void doctor_menu();
 
 
@@ -43,7 +43,7 @@ do{
 
     switch(msChoice){
         case 1:
-            cout<<"under constructionS"<<endl;
+            doctor_menu();
             break;
         case 2:
             patient_menu();
@@ -91,8 +91,8 @@ void patient_menu(){
 
                 break;
             case 2:
-                cout<<"UC"<<endl;
-                break;
+                newPatient.login();
+                return;
 
             case 3:
                 master_menu();
@@ -113,7 +113,47 @@ void patient_menu(){
 
 }
 
-void doctor_portal(){
+void doctor_menu(){
+    int choice;
+    Doctor newDoctor;
+
+
+    do{
+        cout<<"-------Doctor's Portal --------\n"
+            <<"1. Login \n"
+            <<"2. Back To Main Portal\n "
+            <<"3. Exit \n"
+            <<"Choose [1-3]: ";
+
+        cin>>choice;
+        if(cin.fail()){
+            cin.clear();
+            cin.ignore(100,'\n');
+        }
+        switch(choice){
+        case 1:
+            newDoctor.login();
+            break;
+        case 2:
+            master_menu();
+            break;
+        case 3:
+            cout<<"Exiting Program , Good bye"<<endl;
+            exit(0);
+            break;
+        default:
+            cout<<"Invalid choice "<<endl;
+            break;
+
+
+
+        }
+
+    }while(choice!=3);
+
+
+
+
 
 
 
